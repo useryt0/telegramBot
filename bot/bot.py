@@ -31,8 +31,11 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 if not TELEGRAM_TOKEN or not API_BASE_URL:
     raise ValueError("Missing TELEGRAM_TOKEN or API_BASE_URL in .env")
 
-ALLOWED_USER_IDS = [int(uid) for uid in os.getenv("ALLOWED_USER_IDS", "").split(",") if uid.strip()]
-
+# ALLOWED_USER_IDS = [int(uid) for uid in os.getenv("ALLOWED_USER_IDS", "").split(",") if uid.strip()]
+ALLOWED_USER_IDS = [
+    # add more IDs below as needed
+    # 5314,
+]
 ITEMS_PER_PAGE = 8
 
 
