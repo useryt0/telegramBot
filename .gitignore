@@ -1,0 +1,24 @@
+# Ignore everything
+.env
+*/bot_copy.py
+/venv/
+venv/
+env/
+.env/
+.venv/
+ENV/
+*.env
+
+# Allow directory traversal so we can re-include files and folders
+!*/
+
+# Keep these files and the bot folder
+!/.gitignore
+!/.env_example
+!/bot/
+!/bot/**
+!/bot/**/*
+!/bot.py
+!/Dockerfile
+!/requirements.txt
+!/docker-compose.yml
